@@ -12,14 +12,13 @@
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
- 
 
-  // Reference messages collection
+  // Reference message collection
   var messagesRef = firebase.database().ref('messages');
   
   // Listen for form submit
   document.getElementById('contactForm').addEventListener('submit', submitForm);
-  
+  console.log("clicked");
   // Submit form
   function submitForm(e){
     e.preventDefault();
